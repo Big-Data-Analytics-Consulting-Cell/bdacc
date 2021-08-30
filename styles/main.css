@@ -90,12 +90,24 @@ header {
   bottom: 0px;
 }
 
+.the-team{
+  min-height: fit-content;
+}
+
 .the-team .carousel-indicators li {
   background-color: #3d3f4c;
 }
 
 .the-team .carousel-indicators .active {
   background-color: #26b7a0;
+}
+
+.the-team .old, .the-team .new{
+  display: none;
+}
+
+.the-team .show{
+  display: block;
 }
 
 /*Image Gallery Style*/
