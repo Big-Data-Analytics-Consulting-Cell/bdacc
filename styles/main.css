@@ -37,19 +37,22 @@ header {
 }
 
 /*events Style*/
-.the-events .the-event-1 {
-  position: relative;
+.the-events .the-event {
   min-height: 450px;
-  background-size: cover;
-  background-image: center center;
-
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.the-events .the-event-2 {
-  position: relative;
-  min-height: 450px;
-  background-size: cover;
-  background-image: center center;
+.the-events .the-event img{
+  margin: auto;
+  border-radius: 20px;
+  display: block;
+}
+
+.the-events .contrast {
+  background-color: #26b79f1c;
 }
 
 @media (max-width: 992px) {
