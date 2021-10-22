@@ -4,26 +4,36 @@ body {
 
 /*Header Style*/
 header {
-  background: url("../images/home.jpg") no-repeat center center;
   position: relative;
   height: 100vh;
   min-height: 600px;
   background-size: cover;
+  background: url("../images/home.jpg") no-repeat center center;
+}
+
+#logo {
+  width: 130px;
+}
+
+header .black-layer{
+  background-color: rgba(0, 0, 0, 0.082);
+  height: 100vh;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255);
   letter-spacing: 1px;
   font-size: 0.95rem;
+  transition: all 0.3s;
 }
 
-
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active {
-  color: #fff;
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:active {
+  background-color: rgba(255, 255, 255, 0.178);
 }
 
 .the-home-page-text {
-  padding-top: 18rem;
+  padding-top: 10rem;
   color: #fff;
 }
 
@@ -31,7 +41,7 @@ header {
   .the-home-page-text {
     padding-top: 8rem;
   }
-  .the-home-page-text .display-3 {
+  .the-home-page-text .display-4 {
     font-size: 3rem;
   }
 }
@@ -45,7 +55,7 @@ header {
   justify-content: center;
 }
 
-.the-events .the-event img{
+.the-events .the-event img {
   margin: auto;
   border-radius: 20px;
   display: block;
@@ -68,18 +78,18 @@ header {
 
 .the-expertise .progress-bar {
   -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
   -webkit-transition: -webkit-transform 2s ease-in-out;
   transition: -webkit-transform 2s ease-in-out;
   transition: transform 2s ease-in-out;
   transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
   -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
 }
 
 .the-expertise .aos-animate {
   -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .the-expertise .the-exp-image {
@@ -93,7 +103,7 @@ header {
   bottom: 0px;
 }
 
-.the-team{
+.the-team {
   min-height: fit-content;
 }
 
@@ -105,11 +115,12 @@ header {
   background-color: #26b7a0;
 }
 
-.the-team .old, .the-team .new{
+.the-team .old,
+.the-team .new {
   display: none;
 }
 
-.the-team .show{
+.the-team .show {
   display: block;
 }
 
@@ -122,14 +133,14 @@ header {
 @media (max-width: 992px) {
   .the-gallery .card-columns {
     -webkit-column-count: 2;
-            column-count: 2;
+    column-count: 2;
   }
 }
 
 @media (max-width: 576px) {
   .the-gallery .card-columns {
     -webkit-column-count: 1;
-            column-count: 1;
+    column-count: 1;
   }
 }
 
@@ -206,7 +217,7 @@ a.credit {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   position: relative;
 }
 
