@@ -45,10 +45,13 @@ header .black-layer{
     font-size: 3rem;
   }
 }
+.page-content .section{
+background-color: white;
+}
 
 /*events Style*/
 .the-events .the-event {
-  min-height: 450px;
+  min-height: 500px;
   overflow: hidden;
   text-align: center;
   display: flex;
@@ -69,6 +72,36 @@ header .black-layer{
   .the-events .the-event-icon {
     margin-right: 15px;
   }
+}
+
+/*Events Carousel Style*/
+.the-event .carousel-indicators {
+  bottom: 0px;
+}
+
+.the-event {
+  min-height: fit-content;
+}
+
+.the-event .carousel-indicators li {
+  background-color: #3d3f4c;
+}
+
+.the-event .carousel-indicators .active {
+  background-color: #26b7a0;
+}
+
+.the-event .old,
+.the-event .new,
+.the-event .latest,
+.the-event .latest .upcoming,
+.the-event .latest .past{
+  display: none;
+}
+
+.the-event .show,
+.the-event .latest .show {
+  display: block;
 }
 
 /* Expertise Skills Style */
@@ -116,14 +149,17 @@ header .black-layer{
 }
 
 .the-team .old,
-.the-team .new {
+.the-team .new,
+.the-team .latest{
   display: none;
 }
 
 .the-team .show {
   display: block;
 }
-
+.the-team .card img{
+  height: 300px;
+}
 /*Image Gallery Style*/
 .the-gallery .card-columns .card {
   border: none;
@@ -224,4 +260,29 @@ a.credit {
 /*Common Style*/
 .the-section {
   padding: 100px 0;
+  /* background-color: #f3f2d2; */
+  background-color: white;
+}
+.homecard{
+  background-color:#34bfc5;
+  font-size: large;
+  height: 300px;
+}
+.homecard1{
+background-color: #091874;
+}
+.icon-white{
+  filter: brightness(0) invert(1);
+}
+
+.event-link{
+  color:red;
+}
+
+#more{
+  padding:50px 0;
+}
+
+img{
+  max-width: 90vw;
 }

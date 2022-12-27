@@ -13,6 +13,7 @@
     <link href="css/ekko-lightbox.css" rel="stylesheet">
     <link href="styles/bootstrap.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/events.css" rel="stylesheet">
   </head>
 <body id="top">
     <header>
@@ -24,10 +25,12 @@
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="./index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#events">Events</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="./Teams.html">Team</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="./Teams.html">Teams</a></li>
                 <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="./Gallery.html">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="./News.html">News</a></li> -->
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="./achievements.html">Achievements</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="./more.html">More</a></li>
+                <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li> -->
               </ul>
             </div>
           </nav>
@@ -42,52 +45,451 @@
         </div>
       </div>
       </header>
+      <ul class="nav nav-pills justify-content-center mt-4" data-aos="fade-up" >
+        <li class="nav-item">
+          <span class="nav-link btn active" id='latestBtn'> 2022-23</span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link btn" id='newBtn'> 2021-22</span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link btn" id='oldBtn'> 2020-21</span>
+        </li>
+      </ul>
     <div class="the-events" id="events">
 
+        <div class="the-event carousel slide py-5" id="the-carouselIndicator" data-ride="carousel" data-aos="zoom-in-up" data-aos-duration="1000" >
+          <div  class="container the-list show latest ">
+              <ul class="nav nav-pills justify-content-center mt-4" data-aos="fade-up" >
+                <li class="nav-item">
+                  <span class="nav-link btn active" id='pastBtn'>Past Events</span>
+                </li>
+                <li class="nav-item">
+                  <span class="nav-link btn" id='upcomingBtn'>Upcoming Events</span>
+                </li>
+              </ul>
+              <div  class="container the-list past show">
+              <div class="row">              
+              <div id="myModal" class="modal">
+               
+                <div class="modal-content">
+                  <span class="close cursor" onclick="closeModal()">&times;</span>
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="./images/events/thirdyear/heykaggle/img6.jpg" style="margin: auto;" alt="Webinar: Behavioral Data Science" >
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="./images/events/thirdyear/heykaggle/img0.jpg" style="margin: auto;"  >
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="./images/events/thirdyear/heykaggle/img1.jpg" style="margin: auto;" alt="Webinar: Behavioral Data Science" >
+                  </div>
+                  
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="./images/events/thirdyear/heykaggle/img2.jpg" style="margin: auto;" alt="Webinar: Behavioral Data Science" >
+                  </div>
+                  
+                  <div class="mySlides">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="./images/events/thirdyear/heykaggle/img3.jpg" style="margin: auto;" alt="Webinar: Behavioral Data Science" >
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="./images/events/thirdyear/heykaggle/img4.jpg" style="margin: auto;" alt="Webinar: Behavioral Data Science" >
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="./images/events/thirdyear/heykaggle/img5.jpg" style="margin: auto;" alt="Webinar: Behavioral Data Science" >
+                  </div>
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <div class="caption-container" id="caption">
+                    <!-- <p id="caption"></p> -->
+                  </div>
+              
+              <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="images/events/thirdyear/heykaggle/img6.jpg" style="width:100%;" onclick="currentSlide(1)" >
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/events/thirdyear/heykaggle/img0.jpg" style="width:100%" onclick="currentSlide(2)" >
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/events/thirdyear/heykaggle/img1.jpg" style="width:100%" onclick="currentSlide(3)" >
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/events/thirdyear/heykaggle/img2.jpg" style="width:100%" onclick="currentSlide(4)">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/events/thirdyear/heykaggle/img3.jpg" style="width:100%" onclick="currentSlide(5)">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/events/thirdyear/heykaggle/img4.jpg" style="width:100%" onclick="currentSlide(6)">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/events/thirdyear/heykaggle/img5.jpg" style="width:100%" onclick="currentSlide(7)">
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>  
+        <div class="row mx-0 event-card">
+            <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
+              <!-- <img src="./images/events/thirdyear/hey_kaggle.jpeg" style="margin: auto;" alt="Webinar: Behavioral Data Science" height="500px"> -->
+              <div class="row">
+              <div class="row">
+                <div class="column my-4">
+                  <img src="./images/events/thirdyear/hey_kaggle.jpeg" id="gallery_image" style="margin: auto;" alt="Webinar: Behavioral Data Science" width="400px" height="450px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+              </div>
 
-        <!-- <div class="row mx-0 event-card">
+            </div>
+            
+            
+            
+          
+            
+            </div>
+            <div class="col-md-6 pl-5 pt-5 pb-3">
+              <div class="row">
+                  <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
+                <div class="col-10">
+                  <div class="h4">HEY KAGGLE</div>
+                  <p>What are you waiting for? Fasten your seatbelts for an incredible session as BDACC has brought Tanay Mehta, a Kaggle Grandmaster, to the flagship event "HEY KAGGLE"where he'll be answering some of the very HOT questions about a career in Data Science and ML and busting myths around it!
+
+                    Tanay has a plethora of achievements and an astounding profile! Having interned at the Nvidia Machine Learning Event, he has been a huge contributor to Top OS projects of Google, Microsoft, and Huggingface'. </p>
+                    <i>Missed Out the Event? </i>
+                    <button class="btn-primary" style="border-radius:10em"><a href="https://www.youtube.com/watch?v=0M0xOtwumsw" style="color:white">Watch Recording</a></button>
+                  
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row"> 
+          <div id="myModal1" class="modal">
+           
+            <div class="modal-content">
+              <span class="close cursor" onclick="closeModal1()">&times;</span>
+              <div class="mySlides1">
+                <div class="numbertext">1 / 7</div>
+                <img src="images/events/thirdyear/pytorch_bootcamp/img0.jpg" ">
+              </div>
+          
+              <div class="mySlides1">
+                <div class="numbertext">2 / 7</div>
+                <img src="images/events/thirdyear/pytorch_bootcamp/IMG_0056.jpg" >
+              </div>
+          
+              <div class="mySlides1">
+                <div class="numbertext">3 / 7</div>
+                <img src="images/events/thirdyear/pytorch_bootcamp/IMG_0076.jpg" >
+              </div>
+              
+              <div class="mySlides1">
+                <div class="numbertext">4 / 7</div>
+                <img src="images/events/thirdyear/pytorch_bootcamp/IMG_0078.jpg" >
+              </div>
+              <div class="mySlides1">
+                <div class="numbertext">5 / 7</div>
+                <img src="images/events/thirdyear/pytorch_bootcamp/IMG_0085.jpg" >
+              </div>
+              <div class="mySlides1">
+                <div class="numbertext">6 / 7</div>
+                <img src="images/events/thirdyear/pytorch_bootcamp/IMG_0088.jpg" >
+              </div>
+              <div class="mySlides1">
+                <div class="numbertext">7 / 7</div>
+                <img src="images/events/thirdyear/pytorch_bootcamp/img01.jpg" >
+              </div>
+              <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+          
+              <div class="caption-container" id="caption1">
+                <!-- <p id="caption">Event Images</p> -->
+              </div>
+           
+              <div class="row">
+                <div class="column">
+                  <img class="demo1 cursor" src="images/events/thirdyear/pytorch_bootcamp/img0.jpg" style="width:100%;" onclick="currentSlide1(1)">
+                </div>
+              <div class="column">
+                <img class="demo1 cursor" src="images/events/thirdyear/pytorch_bootcamp/IMG_0056.jpg" style="width:100%;" onclick="currentSlide1(2)">
+              </div>
+              <div class="column">
+                <img class="demo1 cursor" src="images/events/thirdyear/pytorch_bootcamp/IMG_0076.jpg" style="width:100%" onclick="currentSlide1(3)" >
+              </div>
+              <div class="column">
+                <img class="demo1 cursor" src="images/events/thirdyear/pytorch_bootcamp/IMG_0078.jpg" style="width:100%" onclick="currentSlide1(4)">
+              </div>
+              <div class="column">
+                <img class="demo1 cursor" src="images/events/thirdyear/pytorch_bootcamp/IMG_0085.jpg" style="width:100%" onclick="currentSlide1(5)" >
+              </div>
+              <div class="column">
+                <img class="demo1 cursor" src="images/events/thirdyear/pytorch_bootcamp/IMG_0088.jpg" style="width:100%" onclick="currentSlide1(6)" >
+              </div>
+              <div class="column">
+                <img class="demo1 cursor" src="images/events/thirdyear/pytorch_bootcamp/img01.jpg" style="width:100%" onclick="currentSlide1(7)" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class="row mx-0 event-card flex-row-reverse contrast">
+            <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
+              <!-- <img src="./images/events/thirdyear/pytorch.jpg" style="margin: auto;" alt="Webinar: A Beginner's Guide to Kaggle" width="400" height="400"> -->
+              <div class="row">
+                <div class="row">
+                  <div class="column my-5" >
+                    <img src="./images/events/thirdyear/pytorch.jpg" id="gallery_image" style="margin: auto;" alt="Webinar: A Beginner's Guide to Kaggle" width="400" height="400" onclick="openModal1();currentSlide1(1)" class="hover-shadow cursor"  href="#MyModal1">
+                  </div>
+                </div>
+                
+                
+                </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+            <div class="col-md-6 pl-5 pt-5 pb-3">
+              <div class="row mb-3">
+                <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
+                <div class="col-10">
+                  <div class="h4">PYTORCH : The Machine Learning Bootcamp</div>
+                  <p>Are you using Machine Learning in your BTech project? Or maybe trying to use ML in your hackathon project? Or maybe want to explore what all the hotshot companies or successful freelance developers use in their AI solutions?
+
+                    Keeping the need of the hour in mind BDACC brings you another feisty workshop - "PyTorch:  The Machine Learning Bootcamp" where our General Secretary Anshuman Mishra will tell you about the world's most habituated and dynamic Machine Learning framework (developed by Facebook Research), PyTorch. Come on board with us and Go from Zero to Hero in your journey of learning Artificial Intelligence.
+                  </p>                      
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+      <div class="container the-list upcoming">
+        <div class="row mx-0 event-card">
           <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
-            <img src="./images/events/img-1.jpg" style="margin: auto;" alt="Hiring Photoshop and Illustrator designers" width="400" height="400">
+            <img src="./images/events/coming-soon.jpg" style="margin: auto;" alt="Webinar: A Beginner's Guide to Kaggle" width="400" height="400">
+        
           </div>
           <div class="col-md-6 pl-5 pt-5 pb-3">
             <div class="row">
-                <div class="col-1 the-event-icon"><i class="text-warning fab fa-hire-a-helper fa-2x fa-fw"></i></div>
+                <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
               <div class="col-10">
-                <div class="h4">Hiring</div>
-                <p>We are looking to hire Photoshop and Illustrator Designers for our team. It will be a fun-filled role and you will be in charge of designing the content that will be going up on our Social Media handles. Sounds interesting? Students of any branch and year can apply at - <a href="https://forms.gle/f8d6HukDYrPVmC2r8">https://forms.gle/f8d6HukDYrPVmC2r8</a> </p>
+                <div class="h4">Case Study Competition</div>
+                <p>
+                  In this event, participants will have to come up with strategies and solutions to problem statements given by the organising committee. The team having the best strategy and presentation wins!
+                  </p>
+                <!-- <p>Ever wondered how companies and individuals make decisions under risky and uncertain situations using data? How companies like Amazon analyze consumer behavior to target them better and increase their revenue? We bring to you a webinar with 𝗣𝗿𝗼𝗳. 𝗚𝗮𝗻𝗻𝗮 𝗣𝗼𝗴𝗿𝗲𝗯𝗻𝗮, 𝗟𝗲𝗮𝗱 𝗳𝗼𝗿 𝗕𝗲𝗵𝗮𝘃𝗶𝗼𝗿𝗮𝗹 𝗗𝗮𝘁𝗮 𝗦𝗰𝗶𝗲𝗻𝗰𝗲 𝗮𝘁 𝘁𝗵𝗲 𝗔𝗹𝗮𝗻 𝗧𝘂𝗿𝗶𝗻𝗴 𝗜𝗻𝘀𝘁𝗶𝘁𝘂𝘁𝗲, 𝗟𝗼𝗻𝗱𝗼𝗻 𝗼𝗻 𝗧𝘂𝗲𝘀𝗱𝗮𝘆, 𝘁𝗵𝗲 𝟮𝟴𝘁𝗵 𝗼𝗳 𝗝𝘂𝗹𝘆 𝗮𝘁 𝟲𝗽𝗺 𝗜𝗦𝗧. Blending behavioral science, computer science, data analytics, engineering, and business model innovation, Prof. Ganna helps businesses, charities, cities, and individuals to better understand why they make decisions they make and how they can optimize their behavior to achieve higher profit, better (cyber)security, more desirable social outcomes, as well as flourish and bolster well-being.<br><b>Register Here:</b> <a href="https://forms.gle/benTw81Db7TJjxzG8">https://forms.gle/benTw81Db7TJjxzG8</a> </p> -->
               </div>
             </div>
           </div>
         </div>
 
 
-        <div class="row mx-0 event-card flex-row-reverse contrast">
-          <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
-            <img src="./images/events/img-2.jpg" style="margin: auto;" alt="Hiring technical members" width="400" height="400">
+
+      <div class="row mx-0 event-card flex-row-reverse contrast">
+        <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
+          <img src="./images/events/coming-soon.jpg" style="margin: auto;" alt="Webinar: A Beginner's Guide to Kaggle" width="400" height="400">
+        </div>
+        <div class="col-md-6 pl-5 pt-5 pb-3">
+          <div class="row mb-3">
+            <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
+            <div class="col-10">
+              <div class="h4">Tableau Workshop</div>
+              <!-- <p>Ever thought of Kaggling and left it because you didn't know where to begin? Join us on Saturday, as we talk to Parul Pandey, India's first woman Kaggle Grand Master at 5pm as she guides us into the intricacies of the platform and tips on how to perform well in competitions. -->
+                <!--  Register today at <a href="https://forms.gle/7wF9Bs5SAJ9eN54Y8">https://forms.gle/7wF9Bs5SAJ9eN54Y8</a>> -->
+                <p>
+                  This event will give the attendees an idea about what Tableau is, some of the tools in Tableau and how to use them. We will also be creating a small dashboard during the course of this event!</p>
+                      
           </div>
-          <div class="col-md-6 pl-5 pt-5 pb-3">
-            <div class="row mb-3">
-              <div class="col-1 the-event-icon"><i class="text-warning fab fa-hire-a-helper fa-2x fa-fw"></i></div>
-              <div class="col-10">
-                <div class="h4">Hiring</div>
-                <p>The Big Data and Analytics Club is the newest official technical club on campus, and are happy to announce that we’re looking for students to join our team for the AY 2020-21. Students of all years, branches, and courses are welcome. Interested students can apply at <a href="https://forms.gle/vvYxgjMAu9DgVSmn9">https://forms.gle/vvYxgjMAu9DgVSmn9</a> before 4th August, 12PM IST.</p>
-              </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      
+        </div>
+        
+      <div  class="container the-list new ">
+       
+      <div class="row mx-0 event-card">
+        <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
+          <img src="./images/events/secondyear/Mathanga Shri.jpg" style="margin: auto;" alt="Webinar: Behavioral Data Science" width="400" height="400">
+        </div>
+        <div class="col-md-6 pl-5 pt-5 pb-3">
+          <div class="row">
+              <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
+            <div class="col-10">
+              <div class="h4">Webinar: The Future Science with Data Science & AI Leaders</div>
+              <p>[Chief Data Officer, Yubi (CredAvenue); Top 50 Influential AI leaders in India, Analytics India Magazine (2021)]
+                BDACC held a deep tech talk on personalization by Mathangi Shri, a renowned Chief Data Officer at Yubi.
+                </p>
             </div>
           </div>
-        </div> -->
+        </div>
+      </div>
+    
+
+      <div class="row mx-0 event-card flex-row-reverse contrast">
+        <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
+          <img src="./images/events/secondyear/sriganesh.webp" style="margin: auto;" alt="Webinar: A Beginner's Guide to Kaggle" width="400" height="400">
+        </div>
+        <div class="col-md-6 pl-5 pt-5 pb-3">
+          <div class="row mb-3">
+            <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
+            <div class="col-10">
+              <div class="h4">SRIGANESH BALAMURUGAN – Data Science in industry vs in college </div>
+              <p>BDACC conducted a brief talk on Data Science in Real World Vs in College with Sriganesh Balamurugan, who has 11+ years of experience in the Data Science field.</p>
+              <i>Missed Out the Event? </i>
+              <button class="btn-primary" style="border-radius:10em"><a href="https://www.youtube.com/watch?v=9je6F7PqzUQ" style="color:white">Watch Recording</a></button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
 
 
+      <div class="row mx-0 event-card">
+        <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
+          <img src="./images/events/secondyear/Resume building.webp" style="margin: auto;" alt="Webinar: Behavioral Data Science" width="400" height="400">
+        </div>
+        <div class="col-md-6 pl-5 pt-5 pb-3">
+          <div class="row">
+              <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
+            <div class="col-10">
+              <div class="h4">Resume Building Workshop (Collaboration with TAB) </div>
+              <p>BDACC in collaboration with TAB conducted a Resume Building Workshop, an informative event in which the attendees were shown ideal Resumes used for applying in big companies. The session included all the do’s and don’ts so that one’s resume becomes the best representation of one’s skills while applying in a company.
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="row mx-0 event-card flex-row-reverse contrast">
+        <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
+          <img src="./images/events/secondyear/OPen house.jpg" style="margin: auto;" alt="Webinar: A Beginner's Guide to Kaggle" width="400" height="400">
+        </div>
+        <div class="col-md-6 pl-5 pt-5 pb-3">
+          <div class="row mb-3">
+            <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
+            <div class="col-10">
+              <div class="h4">Open House  </div>
+              <p>BDACC’s Open House was the perfect event for the eager freshers batch of ’21-25. The event was an introduction to the club and to the world of Data Science & Analytics, Consulting, Machine learning and AI.</p>
+              <i>Missed Out the Event? </i>
+              <button class="btn-primary" style="border-radius:10em"><a href="https://www.youtube.com/watch?v=0TvtJehCEcM" style="color:white">Watch Recording</a></button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mx-0 event-card">
+        <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
+          <img src="./images/events/secondyear/amarjot singh.jpg" style="margin: auto;" alt="Webinar: Behavioral Data Science" width="400" height="400">
+        </div>
+        <div class="col-md-6 pl-5 pt-5 pb-3">
+          <div class="row">
+              <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
+            <div class="col-10">
+              <div class="h4">AMARJOT SINGH – BDACC Talk  </div>
+              <p>[Founder & CEO at SkyLark Labs; PhD, University of Cambridge]
+                BDACC conducted the event BDACTalk with our alumni and founder of Skylark Labs, Dr. Amarjot Singh. His talk gave students an idea about how to launch a successful start-up, conduct and publish great research and get into top universities for MS and PhD.
+                
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="row mx-0 event-card flex-row-reverse contrast">
+        <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
+          <img src="./images/events/secondyear/Zero to Hero.jpg" style="margin: auto;" alt="Webinar: A Beginner's Guide to Kaggle" width="400" height="400">
+        </div>
+        <div class="col-md-6 pl-5 pt-5 pb-3">
+          <div class="row mb-3">
+            <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
+            <div class="col-10">
+              <div class="h4">Case Study: Zero to Hero (Collaboration with IG)</div>
+              <p>BDACC in collaboration with Innovation Garage, NITW conducted an event "Case Study: Zero to Hero" exclusively to run the participants through drafting a case solution. The students were taught strategies and frameworks involved in solving cases, and were shown some brilliant solved case studies from reputed Management institutes.</p>
+              <i>Missed Out the Event? </i>
+              <button class="btn-primary" style="border-radius:10em"><a href="https://www.youtube.com/watch?v=MK3F4_Ry7QE" style="color:white">Watch Recording</a></button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mx-0 event-card">
+        <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
+          <img src="./images/events/secondyear/Case study Comp.jpg" style="margin: auto;" alt="Webinar: Behavioral Data Science" width="400" height="400">
+        </div>
+        <div class="col-md-6 pl-5 pt-5 pb-3">
+          <div class="row">
+              <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
+            <div class="col-10">
+              <div class="h4">Case Study Competition (Collaboration with IG)   </div>
+              <p>Innovation Garage in collaboration with BDACC hosted a Case Study Competition in which the participants were given a problem statement with relevant data. They had 24 hours to solve the problem statement and submit the solution the next day. The students were taught brainstorming ideas and problem solving tactics in this competition.
+                
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="row mx-0 event-card flex-row-reverse contrast">
+        <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
+          <img src="./images/events/secondyear/SQL.jpg" style="margin: auto;" alt="Webinar: A Beginner's Guide to Kaggle" width="400" height="400">
+        </div>
+        <div class="col-md-6 pl-5 pt-5 pb-3">
+          <div class="row mb-3">
+            <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
+            <div class="col-10">
+              <div class="h4">SQL Workshop </div>
+              <p>BDACC, NITW conducted an SQL Workshop which was a live, interactive session where the attendees practiced and asked doubts as they learnt.  Interview questions were covered at the end of the session which highly benefit students during placement and internship season.</p>
+              <i>Missed Out the Event? </i>
+              <button class="btn-primary" style="border-radius:10em"><a href="https://www.youtube.com/watch?v=FJxsysrKDjs" style="color:white">Watch Recording</a></button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      </div>
+      <div  class="container the-list old">
         <div class="row mx-0 event-card">
             <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
-              <img src="./images/events/img-3.jpg" style="margin: auto;" alt="Webinar: Behavioral Data Science" width="400" height="400">
+              <img src="./images/events/firstyear/img-3.jpg" style="margin: auto;" alt="Webinar: Behavioral Data Science" width="400" height="400">
             </div>
             <div class="col-md-6 pl-5 pt-5 pb-3">
               <div class="row">
                   <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
                 <div class="col-10">
                   <div class="h4">Webinar: Behavioral Data Science</div>
-                  <p>Ever wondered how companies and individuals make decisions under risky and uncertain situations using data? How companies like Amazon analyze consumer behavior to target them better and increase their revenue? We bring to you a webinar with 𝗣𝗿𝗼𝗳. 𝗚𝗮𝗻𝗻𝗮 𝗣𝗼𝗴𝗿𝗲𝗯𝗻𝗮, 𝗟𝗲𝗮𝗱 𝗳𝗼𝗿 𝗕𝗲𝗵𝗮𝘃𝗶𝗼𝗿𝗮𝗹 𝗗𝗮𝘁𝗮 𝗦𝗰𝗶𝗲𝗻𝗰𝗲 𝗮𝘁 𝘁𝗵𝗲 𝗔𝗹𝗮𝗻 𝗧𝘂𝗿𝗶𝗻𝗴 𝗜𝗻𝘀𝘁𝗶𝘁𝘂𝘁𝗲, 𝗟𝗼𝗻𝗱𝗼𝗻 𝗼𝗻 𝗧𝘂𝗲𝘀𝗱𝗮𝘆, 𝘁𝗵𝗲 𝟮𝟴𝘁𝗵 𝗼𝗳 𝗝𝘂𝗹𝘆 𝗮𝘁 𝟲𝗽𝗺 𝗜𝗦𝗧. Blending behavioral science, computer science, data analytics, engineering, and business model innovation, Prof. Ganna helps businesses, charities, cities, and individuals to better understand why they make decisions they make and how they can optimize their behavior to achieve higher profit, better (cyber)security, more desirable social outcomes, as well as flourish and bolster well-being.<br><b>Register Here:</b> <a href="https://forms.gle/benTw81Db7TJjxzG8">https://forms.gle/benTw81Db7TJjxzG8</a> </p>
-                </div>
+                  <p>Ever wondered how companies and individuals make decisions under risky and uncertain situations using data? How companies like Amazon analyze consumer behavior to target them better and increase their revenue? We bring to you a webinar with 𝗣𝗿𝗼𝗳. 𝗚𝗮𝗻𝗻𝗮 𝗣𝗼𝗴𝗿𝗲𝗯𝗻𝗮, 𝗟𝗲𝗮𝗱 𝗳𝗼𝗿 𝗕𝗲𝗵𝗮𝘃𝗶𝗼𝗿𝗮𝗹 𝗗𝗮𝘁𝗮 𝗦𝗰𝗶𝗲𝗻𝗰𝗲 𝗮𝘁 𝘁𝗵𝗲 𝗔𝗹𝗮𝗻 𝗧𝘂𝗿𝗶𝗻𝗴 𝗜𝗻𝘀𝘁𝗶𝘁𝘂𝘁𝗲, 𝗟𝗼𝗻𝗱𝗼𝗻 𝗼𝗻 𝗧𝘂𝗲𝘀𝗱𝗮𝘆, 𝘁𝗵𝗲 𝟮𝟴𝘁𝗵 𝗼𝗳 𝗝𝘂𝗹𝘆 𝗮𝘁 𝟲𝗽𝗺 𝗜𝗦𝗧. Blending behavioral science, computer science, data analytics, engineering, and business model innovation, Prof. Ganna helps businesses, charities, cities, and individuals to better understand why they make decisions they make and how they can optimize their behavior to achieve higher profit, better (cyber)security, more desirable social outcomes, as well as flourish and bolster well-being.<br>
+                     <!-- <a href="https://forms.gle/benTw81Db7TJjxzG8">https://forms.gle/benTw81Db7TJjxzG8</a> </p> -->
+                    <i>Missed Out the event?</i>
+                    <button class="btn-primary" style="border-radius:10em"><a href="https://www.youtube.com/watch?v=cp5ojDmr3zE" style="color:white">Watch Recording</a></button>
+                    </div>
               </div>
             </div>
           </div>
@@ -95,7 +497,7 @@
 
           <div class="row mx-0 event-card flex-row-reverse contrast">
             <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
-              <img src="./images/events/img-4.jpg" style="margin: auto;" alt="Webinar: A Beginner's Guide to Kaggle" width="400" height="400">
+              <img src="./images/events/firstyear/img-4.jpg" style="margin: auto;" alt="Webinar: A Beginner's Guide to Kaggle" width="400" height="400">
             </div>
             <div class="col-md-6 pl-5 pt-5 pb-3">
               <div class="row mb-3">
@@ -103,8 +505,11 @@
                 <div class="col-10">
                   <div class="h4">Webinar: A Beginner's Guide to Kaggle</div>
                   <p>Ever thought of Kaggling and left it because you didn't know where to begin? Join us on Saturday, as we talk to Parul Pandey, India's first woman Kaggle Grand Master at 5pm as she guides us into the intricacies of the platform and tips on how to perform well in competitions.
-                    Register today at <a href="https://forms.gle/7wF9Bs5SAJ9eN54Y8">https://forms.gle/7wF9Bs5SAJ9eN54Y8</a>></p>
-                </div>
+                    <!-- Register today at <a href="https://forms.gle/7wF9Bs5SAJ9eN54Y8">https://forms.gle/7wF9Bs5SAJ9eN54Y8</a>></p> -->
+                    <i>Missed Out the event?</i>
+                    <button class="btn-primary" style="border-radius:10em"><a href="https://www.youtube.com/watch?v=xvzOe0RhkMw" style="color:white">Watch Recording</a></button>
+                  
+                  </div>
               </div>
             </div>
           </div>
@@ -112,14 +517,14 @@
 
           <div class="row mx-0 event-card">
             <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
-              <img src="./images/events/img-5.jpg" style="margin: auto;" alt="Webinar: Data Science and it's Opportunities" width="400" height="400">
+              <img src="./images/events/firstyear/img-5.jpg" style="margin: auto;" alt="Webinar: Data Science and it's Opportunities" width="400" height="400">
             </div>
             <div class="col-md-6 pl-5 pt-5 pb-3">
               <div class="row">
                   <div class="col-1 the-event-icon"><i class="text-info fas fa-book fa-2x fa-fw"></i></div>
                 <div class="col-10">
                   <div class="h4">Webinar: Data Science and it's Opportunities</div>
-                  <p>Seeing the success of the Summer Analytics Course among our fellow students, we’ve decided that it’s time to augment your learning experience with an industry experience session from a leading Data Analytics Expert, Mr. Vijay Pravin Maharajan who is an alumnus of TU Munich university and is currently working at Siemens Mobility in Germany. Recognized as one of the Top Data Scientist to watch out, Mr. Vijay brings with him a great deal of experience from the industry as one of its pioneers. So, join us, this Monday at 6pm IST where we talk to him about where the fields of Data Science are heading and what changes the industry is expected to go through in the coming days. We will be sharing the link to join the session on Sunday. If you guys have any questions that you would like to have answered from Mr. Vijay, do fill in this form - <a href="https://forms.gle/MuVyngdTUwK1mh9D7">https://forms.gle/MuVyngdTUwK1mh9D7</a>></a> </p>
+                  <p>Seeing the success of the Summer Analytics Course among our fellow students, we’ve decided that it’s time to augment your learning experience with an industry experience session from a leading Data Analytics Expert, Mr. Vijay Pravin Maharajan who is an alumnus of TU Munich university and is currently working at Siemens Mobility in Germany. Recognized as one of the Top Data Scientist to watch out, Mr. Vijay brings with him a great deal of experience from the industry as one of its pioneers. So, join us, this Monday at 6pm IST where we talk to him about where the fields of Data Science are heading and what changes the industry is expected to go through in the coming days.</p>
                 </div>
               </div>
             </div>
@@ -127,7 +532,7 @@
 
           <div class="row mx-0 event-card flex-row-reverse contrast">
             <div class="col-md-6 px-0 the-event" data-aos="zoom-in">
-              <img src="./images/events/img-6.jpg" style="margin: auto;" alt="Partnership with IIT-Guwahati and free Study content" width="400" height="400">
+              <img src="./images/events/firstyear/img-6.jpg" style="margin: auto;" alt="Partnership with IIT-Guwahati and free Study content" width="400" height="400">
             </div>
             <div class="col-md-6 pl-5 pt-5 pb-3">
               <div class="row mb-3">
@@ -138,7 +543,8 @@
 
                     The all-new Big Data and Analytics club of NIT-W is here with a 6-week hands-on crash course on Data Science with topics from Programming in Python to Machine Learning Fundamentals in partnership with the Consulting and Analytics Club, IIT-Guwahati.
                     
-                    The course starts from the 10th of April and is designed for students from any branch and any year, so go ahead and fill in the form at <a href="https://forms.gle/KSoqVoZ6kUPByCVt5">https://forms.gle/KSoqVoZ6kUPByCVt5</a></p>
+                    <!-- The course starts from the 10th of April and is designed for students from any branch and any year, so go ahead and fill in the form at <a href="https://forms.gle/KSoqVoZ6kUPByCVt5">https://forms.gle/KSoqVoZ6kUPByCVt5</a> -->
+                  </p>
                 </div>
               </div>
             </div>
@@ -146,56 +552,9 @@
 
 
       </div>
-
-      <div class="the-contact" id="contact">
-        <div class="the-contact-detail" data-aos="zoom-in" data-aos-duration="1000">
-          <div class="container">
-            <div class="card py-4 px-4">
-              <div class="h4 pb-4">Contact Us</div>
-              <div class="row">
-                <div class="col-md-7 col-sm-12 mb-3">
-                  <div class="the-contact-message">
-                    <form action="mailto:bda.nitw@gmail.com" method="POST">
-                      <div class="row">
-                        <div class="col-md-6 col-sm-12 mb-3">
-                          <input class="mr-3 form-control" type="text" name="first-name" placeholder="*First Name" required="required"/>
-                        </div>
-                        <div class="col-md-6 col-sm-12 mb-3">
-                          <input class="form-control" type="text" name="last-name" placeholder="Last Name"/>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <input class="form-control" type="text" name="Subject" placeholder="*Subject" required="required"/>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <input class="form-control" type="email" name="_replyto" placeholder="*E-mail" required="required"/>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <textarea class="form-control" name="message" placeholder="*Your Message" rows="4" required="required"></textarea>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <button class="btn btn-primary" type="submit">Send</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <p>Any query or feedback is most welcome.</p>
-                  <p><b>Email:</b> bda.nitw@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div></div>
+  </div>
+  </div>
+   </div>
           </div>
           <footer class="bg-secondary the-section">
             <div class="container text-white">
@@ -223,8 +582,146 @@
           <div id="scrolltop">
             <button class="btn btn-primary"><span class="icon"><i class="fas fa-angle-up fa-2x"></i></span></button>
           </div>
+<!-- toggling between years  -->
+          <script>
+            // storing the elements
+            const newEvent = document.querySelector('.the-event .new');
+            const oldEvent = document.querySelector('.the-event .old');
+            const latestEvent=document.querySelector('.the-event .latest');
+            const pastEvent = document.querySelector('.the-event .latest .past');
+            const upcomingEvent=document.querySelector('.the-event .latest .upcoming');
+            console.log(newEvent, oldEvent,latestEvent);
+      
+            // buttons
+            const newButton = document.getElementById('newBtn');
+            const oldButton = document.getElementById('oldBtn');
+            const latestButton=document.getElementById('latestBtn');
+            const pastButton = document.getElementById('pastBtn');
+            const upcomingButton=document.getElementById('upcomingBtn');
+            // setting up event listeners
+            pastButton.addEventListener('click',()=>{
+                pastButton.classList.add("active");
+                upcomingButton.classList.remove("active");
+                pastEvent.classList.add("show");
+                upcomingEvent.classList.remove("show");
+            });
+            upcomingButton.addEventListener('click',()=>{
+                pastButton.classList.remove("active");
+                upcomingButton.classList.add("active");
+                pastEvent.classList.remove("show");
+                upcomingEvent.classList.add("show");
+            });
+            latestButton.addEventListener('click', ()=>{
+              latestEvent.classList.add("show");
+              newEvent.classList.remove("show");
+              oldEvent.classList.remove("show");
+              latestButton.classList.add("active");
+              newButton.classList.remove("active");
+              oldButton.classList.remove("active");
+               //for revisitors of page
+               pastButton.classList.add("active");
+                upcomingButton.classList.remove("active");
+                pastEvent.classList.add("show");
+                upcomingEvent.classList.remove("show");
+            });
+            newButton.addEventListener('click', ()=>{
+              latestEvent.classList.remove("show");
+              newEvent.classList.add("show");
+              oldEvent.classList.remove("show");
+              newButton.classList.add("active");
+              latestButton.classList.remove("active");
+              oldButton.classList.remove("active");
+            });
+      
+            oldButton.addEventListener('click', ()=>{
+              latestEvent.classList.remove("show");
+              newEvent.classList.remove("show");
+              oldEvent.classList.add("show");
+              newButton.classList.remove("active");
+              latestButton.classList.remove("active");
+              oldButton.classList.add("active");
+            });
+          </script>
+           <script>
+            function openModal() {
+              document.getElementById("myModal").style.display = "block";
+            }
+            
+            function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+            }
+            
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = "Event Images";
+            }
+            </script>
 
+<script>
+  function openModal1() {
+    document.getElementById("myModal1").style.display = "block";
+  }
+  
+  function closeModal1() {
+    document.getElementById("myModal1").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides1(slideIndex);
+  
+  function plusSlides1(n) {
+    showSlides1(slideIndex += n);
+  }
+  
+  function currentSlide1(n) {
+    showSlides1(slideIndex = n);
+  }
+  
+  function showSlides1(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides1");
+    var dots = document.getElementsByClassName("demo1");
+    var captionText = document.getElementById("caption1");
+    console.log(captionText.length);
 
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = "Event Images";
+  }
+  </script> 
+          
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>

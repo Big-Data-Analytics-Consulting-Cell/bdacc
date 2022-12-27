@@ -13,6 +13,26 @@
     <link href="css/ekko-lightbox.css" rel="stylesheet">
     <link href="styles/bootstrap.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <style>
+     .latest .card .social-icon{
+        color:#aaaaaa;
+        transition: color 0.2s;
+        text-decoration: none;
+        margin: 0 10px;;
+        /* background-color: transparent; */
+        height: 15px;
+        
+        
+      }
+      .social-icon:hover{
+        color:#333333;
+        text: "hello"
+      }
+      ion-icon{
+        pointer-events: none;
+      }
+    </style>
   </head>
   <body id="top">
     <header>
@@ -25,9 +45,11 @@
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="./index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="./Events.html">Events</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#Team">Team</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="./achievements.html">Achievements</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="./more.html">More</a></li>
                 <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="./Gallery.html">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="./News.html">News</a></li> -->
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li> -->
               </ul>
             </div>
           </nav>
@@ -48,17 +70,20 @@
         </div>
         <ul class="nav nav-pills justify-content-center mt-4" data-aos="fade-up" >
           <li class="nav-item">
-            <span class="nav-link btn active" id='newBtn'>Current Team</span>
+            <span class="nav-link btn active" id='latestBtn'>Team 22-23</span>
           </li>
           <li class="nav-item">
-            <span class="nav-link btn" id='oldBtn'>Previous Team</span>
+            <span class="nav-link btn " id='newBtn'>Team 21-22</span>
+          </li>
+          <li class="nav-item">
+            <span class="nav-link btn" id='oldBtn'>Team 20-21</span>
           </li>
         </ul>
         <div class="the-team carousel slide py-5" id="the-carouselIndicator" data-ride="carousel" data-aos="zoom-in-up" data-aos-duration="1000">
-          <div class="container the-list show new">
+          <div class="container the-list new">
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Sriphani Bellamkonda.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Sriphani Bellamkonda.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Sriphani</div>
                     <p class="text-muted">General Secretary</p>
@@ -66,7 +91,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Shubham Das.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Shubham Das.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Shubham Das</div>
                     <p class="text-muted">General Secretary</p>
@@ -74,7 +99,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Swetank Sahai.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Swetank Sahai.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Shwetank Sahai</div>
                     <p class="text-muted">Data Science Secretary</p>
@@ -85,7 +110,7 @@
 
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Shalini Sai Padamata.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Shalini Sai Padamata.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Shalini</div>
                     <p class="text-muted">Consulting Secretary</p>
@@ -93,7 +118,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Gouri.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Gouri.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Gouri S</div>
                     <p class="text-muted">Business Analytics Secretary</p>
@@ -101,7 +126,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Harsh_Garodia_Photo.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Harsh_Garodia_Photo.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Harsh Garodia</div>
                     <p class="text-muted">Data Analytics Secretary</p>
@@ -112,7 +137,7 @@
 
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Soumyadip.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Soumyadip.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Soumyadip</div>
                     <p class="text-muted"></p>
@@ -120,7 +145,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Anshuman Mishra.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Anshuman Mishra.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Anshuman Mishra</div>
                     <p class="text-muted"></p>
@@ -128,7 +153,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/GOSAVI SHUBHAM.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/GOSAVI SHUBHAM.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Shubham Giri</div>
                     <p class="text-muted"></p>
@@ -139,7 +164,7 @@
 
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Srajan Dubey.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Srajan Dubey.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Srajan Dubey</div>
                     <p class="text-muted"></p>
@@ -147,7 +172,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Kolli Krupakar.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Kolli Krupakar.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Kolli Krupakar</div>
                     <p class="text-muted"></p>
@@ -155,7 +180,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/pic - 21_Raghuvamsi DV.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/pic - 21_Raghuvamsi DV.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Raghuvamsi</div>
                     <p class="text-muted"></p>
@@ -166,7 +191,7 @@
 
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Saurabh Shukla.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Saurabh Shukla.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Saurabh Shukla</div>
                     <p class="text-muted"></p>
@@ -174,7 +199,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Chahat Lokhande.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Chahat Lokhande.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Chahat L</div>
                     <p class="text-muted"></p>
@@ -182,7 +207,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Abhijeet Sarma.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Abhijeet Sarma.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Abhijeet</div>
                     <p class="text-muted"></p>
@@ -193,7 +218,7 @@
 
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Tanmay Jha.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Tanmay Jha.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Thanmay Jha</div>
                     <p class="text-muted"></p>
@@ -201,7 +226,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Nishna Gampa.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Nishna Gampa.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Nishna</div>
                     <p class="text-muted"></p>
@@ -209,7 +234,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Manoj Boganadham.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Manoj Boganadham.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Manoj Boganadham</div>
                     <p class="text-muted"></p>
@@ -220,7 +245,7 @@
 
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Akshat Rai Laddha C_35.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Akshat Rai Laddha C_35.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Akshat Rai</div>
                     <p class="text-muted"></p>
@@ -228,7 +253,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/vamshi kishore.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/vamshi kishore.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Vamshi Kishore</div>
                     <p class="text-muted"></p>
@@ -236,7 +261,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Manvitha Reddy Anapana.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Manvitha Reddy Anapana.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Manvitha</div>
                     <p class="text-muted"></p>
@@ -247,7 +272,7 @@
 
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Prashanth Bairu.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Prashanth Bairu.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Prashanth Bairu</div>
                     <p class="text-muted"></p>
@@ -255,7 +280,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Rahul Velisoju.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Rahul Velisoju.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Rahul Velisoju</div>
                     <p class="text-muted"></p>
@@ -263,7 +288,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/PHOTO - Gandla Sumanth.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/PHOTO - Gandla Sumanth.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Gandla Sumanth</div>
                     <p class="text-muted"></p>
@@ -274,7 +299,7 @@
 
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Mahaveer Kamuju.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Mahaveer Kamuju.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Mahaveer Kamuju</div>
                     <p class="text-muted"></p>
@@ -282,7 +307,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Nitin Reddy.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Nitin Reddy.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Sri Nitin Reddy</div>
                     <p class="text-muted"></p>
@@ -290,17 +315,17 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Kilari Easwar.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Kilari Easwar.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Easwar Kilari</div>
                     <p class="text-muted"></p>
                   </div>
                 </div>
               </div>
-              
+            </div>
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Siddharth Srinivasan.jpeg" alt="image"/>
+                  <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Siddharth Srinivasan.jpeg" alt="image"/>
                     <div class="card-body text-center">
                       <div class="h5">Siddharth S</div>
                       <p class="text-muted"></p>
@@ -308,7 +333,7 @@
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Abilash reddy.jpg" alt="image"/>
+                  <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Abilash reddy.jpg" alt="image"/>
                     <div class="card-body text-center">
                       <div class="h5">Abhilash Reddy</div>
                       <p class="text-muted"></p>
@@ -316,7 +341,7 @@
                   </div>
                 </div>
                   <div class="col-md-4">
-                    <div class="card d-block mb-3"><img class="card-img-top" src="images/newTeam/Lakhan sharma.jpg" alt="image"/>
+                    <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_21-22/Lakhan sharma.jpg" alt="image"/>
                       <div class="card-body text-center">
                         <div class="h5">Lakhan Sharma</div>
                         <p class="text-muted"></p>
@@ -324,12 +349,12 @@
                     </div>
                 </div>
               </div>
-            </div>
+            <!-- </div> -->
           </div>
           <div class="container the-list old">
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Akshay_Nayak.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Akshay_Nayak.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Akshay Nayak</div>
                     <p class="text-muted">Team Lead</p>
@@ -337,7 +362,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Harshith Belagur.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Harshith Belagur.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Harshith Belagur</div>
                     <p class="text-muted">Team Lead</p>
@@ -345,7 +370,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Adhav Mathialagan.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Adhav Mathialagan.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Adhav Mathialagan</div>
                     <p class="text-muted">Team Lead</p>
@@ -356,7 +381,7 @@
 
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/agraha_jigyasu.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/agraha_jigyasu.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Agraha Jigashu</div>
                     <p class="text-muted">Team Lead</p>
@@ -367,7 +392,7 @@
 
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Aldrin_Saju_Photo.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Aldrin_Saju_Photo.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Aldrin Abraham Saju</div>
                     <p class="text-muted">Consultant</p>
@@ -377,7 +402,7 @@
               <!-- To add new line or row for team make a div with row as class-->
               <!--to add new team members, start copy from here-->
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Ayaan_Ali.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Ayaan_Ali.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Ayaan Ali</div>
                     <p class="text-muted">Consultant</p>
@@ -386,7 +411,7 @@
               </div>
               <!--Copy till here-->
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/sudarshan_ramesh.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/sudarshan_ramesh.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Sudharshan Ramesh</div>
                     <p class="text-muted">Consultant</p>
@@ -400,7 +425,7 @@
               <!-- To add new line or row for team make a div with row as class-->
               <!--to add new team members, start copy from here-->
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/pruthvi.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/pruthvi.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">M. Pruthvi Taranath</div>
                     <p class="text-muted">Consultant</p>
@@ -408,7 +433,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Tanumon_Roy.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Tanumon_Roy.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Tanumon Roy</div>
                     <p class="text-muted">Associate Analyst</p>
@@ -416,7 +441,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Rithikreddy.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Rithikreddy.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Rithik Reddy</div>
                     <p class="text-muted">Associate Analyst</p>
@@ -430,7 +455,7 @@
 
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Anshuman Mishra.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Anshuman Mishra.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Anshuman Mishra</div>
                     <p class="text-muted">Associate Analyst</p>
@@ -438,7 +463,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Rishav_jain.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Rishav_jain.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Rishav Jain</div>
                     <p class="text-muted">Associate Analyst</p>
@@ -446,7 +471,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Harjeet.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Harjeet.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Harjeet Singh</div>
                     <p class="text-muted">Associate Analyst</p>
@@ -456,7 +481,7 @@
             </div>
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Saketh Reddy.png" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Saketh Reddy.png" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Noti Saketh Reddy</div>
                     <p class="text-muted">Associate Analyst</p>
@@ -464,7 +489,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/soumyadip.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/soumyadip.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Soumyadip Payra</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -474,7 +499,7 @@
               <!-- To add new line or row for team make a div with row as class-->
               <!--to add new team members, start copy from here-->
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Manoj Boganadham.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Manoj Boganadham.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Manoj Boganadham</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -486,7 +511,7 @@
             </div>
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Shashank Tripathi.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Shashank Tripathi.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Shashank Hariharnath Tripathi</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -495,7 +520,7 @@
               </div>
               
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Abhijeet_G_Sarma.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Abhijeet_G_Sarma.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Abhijeet G Sarma</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -503,7 +528,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Raghuvamsi Daita.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Raghuvamsi Daita.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Raghu Vamsi Daita</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -515,7 +540,7 @@
             </div>
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Manvitha Reddy.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Manvitha Reddy.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Manvitha Reddy</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -523,7 +548,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Aravind Reddy.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Aravind Reddy.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Aravind Reddy Kasarla</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -531,7 +556,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Harsh Srivastava.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Harsh Srivastava.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Harsh Srivastava</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -541,7 +566,7 @@
             </div>
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Ankith Suresh.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Ankith Suresh.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Ankith Suresh</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -549,7 +574,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Parvesh Tyagi.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Parvesh Tyagi.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Parvesh Tyagi</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -557,7 +582,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Trapti Yadav.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Trapti Yadav.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Trapti Yadav</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -567,7 +592,7 @@
             </div>
             <div class="row">
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/Veena.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/Veena.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Veena Gayathri</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -577,7 +602,7 @@
               <!-- To add new line or row for team make a div with row as class-->
               <!--to add new team members, start copy from here-->
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/krishna_kanduri.jpg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/krishna_kanduri.jpg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Krishna Chaitanya Kanduri</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -587,7 +612,7 @@
 
               <!--Copy till here-->
               <div class="col-md-4">
-                <div class="card d-block mb-3"><img class="card-img-top" src="images/team/harsh.jpeg" alt="image"/>
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_20-21/harsh.jpeg" alt="image"/>
                   <div class="card-body text-center">
                     <div class="h5">Sankhla Harsh Kumar</div>
                     <p class="text-muted">Assistant Analyst</p>
@@ -602,58 +627,606 @@
 
 
           </div>
-        </div>
-      </div>
-
-      <div class="the-contact" id="contact">
-        <div class="the-contact-detail" data-aos="zoom-in" data-aos-duration="1000">
-          <div class="container">
-            <div class="card py-4 px-4">
-              <div class="h4 pb-4">Contact Us</div>
+          <div  class="container the-list show latest">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Anshuman_Genera_Secretary.jpeg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Anshuman Mishra</div>
+                    <p class="text-muted">General Secretary</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/iamanshuman/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/shivance">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/shivanshuman"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div>  
+                  </div>
+                  
+               </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Srajan Dubey_General Secretary_1.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Srajan Dubey</div>
+                    <p class="text-muted">General Secretary</p>
+                    <div class="container" align="center" >
+                      <a class='social-icon' href="https://www.linkedin.com/in/srajan-dubey-012161197/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/srajanmk7?tab=repositories">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <!-- <a class="social-icon" href="#"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a> -->
+                    </div>  
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/GANDLA SUMANTH_Additional secretary.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Gandla Sumanth</div>
+                    <p class="text-muted">Additional Secretary</p>
+                    <div class=" container" align="center" >
+                      <a class='social-icon' href="https://www.linkedin.com/in/gandla-sumanth-423674200">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/GANDLASUMANTH">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/gandlasumanth"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Chahat_Additional_Secretary.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Chahat Lokhande</div>
+                    <p class="text-muted">Additional Secretary</p>
+                    <div class="container" align="center" >
+                      <a class='social-icon' href="https://www.linkedin.com/in/chahatl/
+                  ">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/ChahatL
+                  ">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/chahatl30
+                  "><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div> 
+                  </div>
+                   
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/IMG-20220924-WA0028.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Kolli Krupakar</div>
+                    <p class="text-muted">Additional Secretary</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/kolli-krupakar-06361a1b9/
+                  ">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/Kolli7
+                  ">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/kolli7
+                  "><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div> 
+                  </div>
+                   
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/IMG-20220924-WA0026.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Saurabh Shukla</div>
+                    <p class="text-muted">Additional Secretary</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/0xsaurrabh/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <!-- <a class='social-icon' href="#">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a> -->
+                      <!-- <a class="social-icon" href="#"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a> -->
+                    </div>  
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Akshat Rai Laddha_Joint secretary1.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Akshat Rai Laddha</div>
+                    <p class="text-muted">Joint Secretary</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/akshat-rai-laddha-8905a0189/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/akshatladdha16">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/akshatrailaddha"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div> 
+                  </div>
+                   
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Siddharth_Srinivasan__Joint_Secratary.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Siddharth Srinivasan</div>
+                    <p class="text-muted">Joint Secretary</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/siddharthsrinivasan8">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/sidgun8">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/sidgun"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div>  
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Tanmay_Joint Secretary_.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Tanmay Jha</div>
+                    <p class="text-muted">Joint Secretary</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/tanmay-jha-19537b200/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/lordRavenX">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <!-- <a class="social-icon" href="#"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a> -->
+                    </div> 
+                  </div>
+                   
+                </div>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Nitin Reddy_Joint Secretary_.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Nitin Reddy</div>
+                    <p class="text-muted">Joint Secretary</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/nitin-reddy-0459aa219">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <!-- <a class='social-icon' href="">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a> -->
+                      <!-- <a class="social-icon" href=""><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a> -->
+                    </div>  
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/IMG-20220924-WA0030.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Prashanth Bairu</div>
+                    <p class="text-muted">Joint Secretary</p>
+                    <div class="container" align="center" >
+                      <a class='social-icon' href="https://www.linkedin.com/in/prashanth-bairu-024915187">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <!-- <a class='social-icon' href="#">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a> -->
+                      <!-- <a class="social-icon" href="#"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a> -->
+                    </div>  
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Rahul Velisoju_ joint secretary_.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Rahul Velisoju</div>
+                    <p class="text-muted">Joint Secretary</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/rahul-velisoju-b6a58921a/
+                  ">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/Rahulw24
+                  ">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/rahulvelisoju
+                  "><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div> 
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Keshna Trivedi_Executive Member.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Keshna Trivedi</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/keshna-trivedi-b08637231">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <!-- <a class='social-icon' href="#">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a> -->
+                      <!-- <a class="social-icon" href="#"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a> -->
+                    </div>  
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Divyansh Chaudhary_Executive Member.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Divyansh Chaudhary</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/divyansh-chaudhary-863828231/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <!-- <a class='social-icon' href="">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a> -->
+                      <a class="social-icon" href="https://www.kaggle.com/divyanshchaudharyy"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div> 
+                  </div>
+                   
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Greata Chakravarty_Executive Member.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Greata Chakravarthy</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/greata-chakravarty-2a5a0925b">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <!-- <a class='social-icon' href="#">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a> -->
+                      <!-- <a class="social-icon" href="#"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a> -->
+                    </div>  
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Linesh Malkam_Executive Member.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Linesh Malkam</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/linesh-malkam-ba613b133/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/lmalkam">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/lineshmalkam"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div>  
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Aditi Babu_Executive Member.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Aditi Babu</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="http://www.linkedin.com/in/aditi-babu
+                  ">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/aditibabu
+                  ">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/aditibabu
+                  "><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div>
+                  </div>
+                   
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Daksh Deep_Executive Member.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Daksh Deep</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <!-- <a class='social-icon' href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a> -->
+                      <!-- <a class='social-icon' href="#">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a> -->
+                      <a class="social-icon" href="https://www.kaggle.com/deepdaksh"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div> 
+                  </div>
+                   
+                </div>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/ADITI_BHAGAT_EXECUTIVE.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Aditi Bhagat</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class="social-icon" href="https://www.linkedin.com/in/aditi-bhagat-73508022as">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <!-- <a class='social-icon' href="">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a> -->
+                      <a class="social-icon" href="https://www.kaggle.com/aditibhagat19"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div>  
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Pradeep_Kumar_Executive_Member.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Pradeep Kumar</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/pradeep-kumar-balivada-8514b8207
+                  ">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/balivadapradeepkumar
+                  ">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/pradeep2001
+                  "><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div> 
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Aryan Gupta_Executive Member.jpeg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Aryan Gupta</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/aryan7gupta10">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <!-- <a class='social-icon' href="">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a> -->
+                      <!-- <a class="social-icon" href=""><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a> -->
+                    </div> 
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/PriyaGarg_ExecutiveMember.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Priya Garg</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/priya-garg-9220381b3/
+                  ">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/garg-priya-creator
+                  ">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/priyagarg3341
+                  "><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div>  
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Tejaswini Reddy_Executive member.jpeg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Tejaswini Reddy</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/tejaswini-reddy-714973227
+                  ">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <!-- <a class='social-icon' href="">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a> -->
+                      <a class="social-icon" href="https://www.kaggle.com/reddytejaswini
+                  "><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div>  
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Nischala Bonda_Executive Member.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Nischala Bonda</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/nischala-bonda-ba263821a
+                  ">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/NischalaBonda
+                  ">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/sainischala
+                  "><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div>  
+                  </div>
+               
+                </div>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Pranav_Taparia_EXECUTIVE.png" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Pranav Kumar</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/me?trk=p_mwlite_me_notifications-secondary_nav">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <!-- <a class='social-icon' href="#">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a> -->
+                      <!-- <a class="social-icon" href="#"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a> -->
+                    </div>  
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Deep_Saha_Executive_Member.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Deep Saha</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/deep-saha97/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/iamdeep018">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/deepsaha97"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div> 
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card d-block mb-3"><img class="card-img-top" src=".\images\Team_22-23\Amrutha-Sriram_-Executive-Member.jpg" alt="image"/>
+                  <div class="card-body text-center">
+                    <div class="h5">Amrutha Sriram</div>
+                    <p class="text-muted">Executive Member</p>
+                    <div class="container" align="center">
+                      <a class='social-icon' href="https://www.linkedin.com/in/amruthasriram">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a>
+                      <a class='social-icon' href="https://github.com/rux0422/">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="social-icon" href="https://www.kaggle.com/amruthasriram/account"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                    </div>  
+                  </div>
+                  
+                </div>
+              </div>
+              </div>
               <div class="row">
-                <div class="col-md-7 col-sm-12 mb-3">
-                  <div class="the-contact-message">
-                    <form action="mailto:bda.nitw@gmail.com" method="POST">
-                      <div class="row">
-                        <div class="col-md-6 col-sm-12 mb-3">
-                          <input class="mr-3 form-control" type="text" name="first-name" placeholder="*First Name" required="required"/>
-                        </div>
-                        <div class="col-md-6 col-sm-12 mb-3">
-                          <input class="form-control" type="text" name="last-name" placeholder="Last Name"/>
-                        </div>
+                <div class="col-md-4" >
+                  <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Rishabh_Agrawal_ExecutiveMember.jpg" alt="image"/>
+                    <div class="card-body text-center" >
+                      <div class="h5">Rishabh Agarwal</div>
+                      <p class="text-muted">Executive Member</p>
+                      <div class="container" align="center">
+                        <a class='social-icon' href="https://www.linkedin.com/in/rishabhagrawal277">
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a class='social-icon' href="https://github.com/Rishabh952008">
+                          <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <a class="social-icon" href="https://www.kaggle.com/rishabhagrawalnitw"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
                       </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <input class="form-control" type="text" name="Subject" placeholder="*Subject" required="required"/>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <input class="form-control" type="email" name="_replyto" placeholder="*E-mail" required="required"/>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <textarea class="form-control" name="message" placeholder="*Your Message" rows="4" required="required"></textarea>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <button class="btn btn-primary" type="submit">Send</button>
-                        </div>
-                      </div>
-                    </form>
+                    </div>
+                      
                   </div>
                 </div>
-                <div class="col-md-5">
-                  <p>Any query or feedback is most welcome.</p>
-                  <p><b>Email:</b> bda.nitw@gmail.com</p>
+                <div class="col-md-4">
+                  <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Loknath Mahanthi_Executive Member.jpg" alt="image"/>
+                    <div class="card-body text-center">
+                      <div class="h5">Loknath Mahanti</div>
+                      <p class="text-muted">Executive Member</p>
+                      <div class="container" align="center">
+                        <a class='social-icon' href="https://www.linkedin.com/in/loknath-mahanthi">
+                          <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <!-- <a class='social-icon' href="">
+                          <ion-icon name="logo-github"></ion-icon>
+                        </a> -->
+                        <a class="social-icon" href="https://www.kaggle.com/loknathmahanthi"><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                      </div>  
+                    </div>
+                 
+                  </div>
+                </div>
+                  <div class="col-md-4">
+                    <div class="card d-block mb-3"><img class="card-img-top" src="images/Team_22-23/Yashovardhan_Srivastava_Executive_Member.jpg" alt="image"/>
+                      <div class="card-body text-center">
+                        <div class="h5">Yashovardhan</div>
+                        <p class="text-muted">Executive Member</p>
+                        <div class="container" align="center">
+                          <a class='social-icon' href="https://www.linkedin.com/in/yash-srivastava1911
+                      ">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                          </a>
+                          <a class='social-icon' href="https://www.github.com/yash-srivastava19 
+                      ">
+                            <ion-icon name="logo-github"></ion-icon>
+                          </a>
+                          <a class="social-icon" href="https://www.kaggle.com/yashsrivastava51213
+                      "><img src="./images/Kaggle_logo.png" style="width:40px;height:auto;" /></a>
+                        </div> 
+                      </div>
+                      
+                    </div>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
-      </div></div>
+
+      </div>
           </div>
           <footer class="bg-secondary the-section">
             <div class="container text-white">
@@ -686,27 +1259,39 @@
       // storing the elements
       const newTeam = document.querySelector('.the-team .new');
       const oldTeam = document.querySelector('.the-team .old');
-
-      console.log(newTeam, oldTeam)
+      const latestTeam=document.querySelector('.the-team .latest');
+      console.log(newTeam, oldTeam,latestTeam);
 
       // buttons
       const newButton = document.getElementById('newBtn');
       const oldButton = document.getElementById('oldBtn');
-
+      const latestButton=document.getElementById('latestBtn');
       // setting up event listeners
+      latestButton.addEventListener('click', ()=>{
+        latestTeam.classList.add("show");
+        newTeam.classList.remove("show");
+        oldTeam.classList.remove("show");
+        latestButton.classList.add("active")
+        newButton.classList.remove("active");
+        oldButton.classList.remove("active");
+      });
       newButton.addEventListener('click', ()=>{
+        latestTeam.classList.remove("show");
         newTeam.classList.add("show");
         oldTeam.classList.remove("show");
         newButton.classList.add("active");
+        latestButton.classList.remove("active");
         oldButton.classList.remove("active");
       });
 
       oldButton.addEventListener('click', ()=>{
+        latestTeam.classList.remove("show");
         newTeam.classList.remove("show");
         oldTeam.classList.add("show");
         newButton.classList.remove("active");
+        latestButton.classList.remove("active");
         oldButton.classList.add("active");
-      })
+      });
     </script>
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -715,4 +1300,6 @@
     <script src="js/aos.js"></script>
     <script src="js/ekko-lightbox.min.js"></script>
     <script src="scripts/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
